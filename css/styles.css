@@ -1,0 +1,232 @@
+/*цвет основного текста #212121*/
+/*вторичный цвет текста #757575/
+/*белый #FFFFFF*/
+/*акцент #2196F3*/
+
+:root {
+  --primary-text-color:#757575;
+  --title-text-color:#212121;
+  --accent-color:#2196F3;
+  --primary-white-color:#FFFFFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: var(--primary-white-color);
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+}
+
+/*header*/
+.logo-header {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #000;
+    text-decoration: none; 
+    
+}
+.logo-color {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-color);
+}
+
+/*site-nav*/
+
+.site-nav .link{
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color); 
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus  {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+
+/*contacts*/
+
+.contacts-link a {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    
+    }
+
+.contacts-link a:hover,
+.contacts-link a:focus {
+    color: var(--accent-color);
+}
+
+/* main */
+
+/*hero*/
+
+.hero {
+    background-color: #2F303A;
+     }
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--primary-white-color);
+    }
+
+.hero-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--primary-white-color);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/*list*/
+
+.list-caption {
+    font-weight: 700;
+    line-height: 1.14;
+    color: var(--title-text-color);
+}
+
+.list-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--primary-text-color);
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+/*item*/
+
+.items-caption {
+    line-height: 1.14;
+    color: var(--title-text-color);
+}
+
+.items-text {
+    
+    line-height: 1.71;
+    color: var(--primary-text-color);
+}
+
+/*button*/
+.btn-portfolio {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    border: none;
+    
+}
+
+.btn .btn-portfolio:hover,
+.btn .btn-portfolio:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+    
+}
+
+/*item*/
+
+.item a {
+    text-decoration: none;
+}
+
+.subject {
+    
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.desc {
+    
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-text-color);
+}
+
+
+/*footer*/
+footer {
+    background-color: #2F303A;
+    
+}
+
+.logo-footer {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--primary-white-color);
+    text-decoration: none; 
+ 
+}
+
+.contact-link a {
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.contact-link a:hover,
+.contact-link a:focus {
+    color: var(--accent-color);
+}
+.color-contact {
+    color: var(--primary-white-color);
+}
+
+.color-contact:hover,
+.color-contact:focus {
+    color: var(--accent-color);
+}
