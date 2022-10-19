@@ -16,14 +16,52 @@ body {
     background: var(--primary-white-color);
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
+    
+  
 }
 
+.container {
+    width: 1200px;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+}
+
+.page-header {
+  width: 1600px;
+  
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    
+}
+
+
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;}
+
 /*header*/
 .logo-header {
+    margin-right: 93px;
     font-family:'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -42,12 +80,37 @@ ul {
 
 /*site-nav*/
 
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item-nav {
+    
+    /*background-color: tomato;*/
+}
+
+.site-nav .item-nav + .item-nav {
+    margin-left: 50px;
+}
+
+/*.site-nav .item-nav:not(:last-child) {
+margin-right: 50px;
+} */
+
+
+
 .site-nav .link{
-    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-text-color); 
+    text-decoration: none;
+    
+ 
 }
 
 .site-nav .link:hover,
@@ -63,12 +126,22 @@ ul {
 
 /*contacts*/
 
+.contacts-link {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-link .item-nav + .item-nav {
+    margin-left: 50px;
+}
+
 .contacts-link a {
-    text-decoration: none;
+    
+    color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    text-decoration: none;
     
     }
 
@@ -83,9 +156,19 @@ ul {
 
 .hero {
     background-color: #2F303A;
+    width: 1600px;
+    margin-top: 0;
+
+    
      }
 
 .hero-title {
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -95,6 +178,13 @@ ul {
     }
 
 .hero-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 4px;
+    min-width: 216px;
+    height: 50px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -115,19 +205,30 @@ ul {
 }
 /*list*/
 
+.section {
+    margin-top: 94px;
+    width: 1600px;
+}
+
 .list-caption {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     line-height: 1.14;
     color: var(--title-text-color);
 }
 
 .list-text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.7;
     color: var(--primary-text-color);
 }
 
 .heading {
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -135,15 +236,20 @@ ul {
     color: var(--title-text-color);
 }
 
-/*item*/
+.items {
+    padding-bottom: 94px;
+}
 
 .items-caption {
+    margin-top: 30px;
+    margin-bottom: 10px;
     line-height: 1.14;
     color: var(--title-text-color);
 }
 
 .items-text {
-    
+    margin-top: 0;
+    margin-bottom: 30px;
     line-height: 1.71;
     color: var(--primary-text-color);
 }
@@ -170,14 +276,19 @@ ul {
     
 }
 
-/*item*/
+.item {
+    margin-top: 34px;
+    padding-bottom: 94px;
+}
 
 .item a {
+    
     text-decoration: none;
 }
 
 .subject {
-    
+    margin-top: 20px;
+    margin-bottom: 0;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -185,7 +296,8 @@ ul {
 }
 
 .desc {
-    
+    margin-top: 4px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.87;
     color: var(--primary-text-color);
@@ -193,10 +305,20 @@ ul {
 
 
 /*footer*/
-footer {
+
+.footer-page {
+    width: 1600px;
     background-color: #2F303A;
-    
 }
+
+
+
+   .btm {
+    padding-top: 60px;
+    padding-bottom: 60px;
+   } 
+    
+
 
 .logo-footer {
     font-family:'Raleway', sans-serif;
@@ -206,6 +328,10 @@ footer {
     color: var(--primary-white-color);
     text-decoration: none; 
  
+}
+
+.contact-link {
+    
 }
 
 .contact-link a {
