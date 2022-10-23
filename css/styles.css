@@ -20,6 +20,11 @@ body {
   
 }
 
+.section {
+    padding-top: 94px;
+    
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -30,7 +35,7 @@ body {
 }
 
 
-  
+
 
 
 .box {
@@ -38,6 +43,12 @@ body {
     align-items: center;
     
 }
+
+.hero-title,.list-caption,.heading,.list-text,.items-text,.subject {
+    margin-top: 0;
+}
+
+
 
 
 ul {
@@ -68,7 +79,8 @@ ul {
 
 .logo-header {
     margin-right: 93px;
-    
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-family:'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -160,7 +172,7 @@ margin-right: 50px;
 
 .hero {
     height: 600px;
-    width: 1600px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,10 +185,10 @@ margin-right: 50px;
      }
 
 .hero-title {
-    
+   
+   
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
     margin-bottom: 30px;
     width: 696px;
 
@@ -216,10 +228,7 @@ margin-right: 50px;
 }
 
 
-.section {
-    padding-top: 94px;
-    width: 1600px;
-}
+/*Наші Переваги*/
 
 .list {
     display: flex;
@@ -238,13 +247,14 @@ margin-right: 50px;
     margin-top: 0;
     margin-bottom: 10px;
     
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     color: var(--title-text-color);
 }
 
 .list-text {
-    margin-top: 0;
+    
     margin-bottom: 0;
     
     font-size: 14px;
@@ -252,8 +262,10 @@ margin-right: 50px;
     color: var(--primary-text-color);
 }
 
+/*Чим ми займаємося*/
+
 .heading {
-    margin-top: 0;
+    
     margin-bottom: 0;
     padding-bottom: 50px;
     
@@ -263,6 +275,8 @@ margin-right: 50px;
     text-align: center;
     color: var(--title-text-color);
 }
+
+/*Наша команда*/
 
 .comand {
 
@@ -301,18 +315,20 @@ margin-right: 50px;
 .items-caption {
     margin-top: 30px;
     margin-bottom: 10px;
+    font-size: 16px;
     line-height: 1.14;
     color: var(--title-text-color);
 }
 
 .items-text {
-    margin-top: 0;
+    
     margin-bottom: 30px;
+    font-size: 16px;
     line-height: 1.71;
     color: var(--primary-text-color);
 }
 
-/*button*/
+/*PORTFOLIO*/
 
 .btn {
     display: flex;
@@ -408,18 +424,23 @@ margin-right: 50px;
 }
 
 .border {
-    margin-top: -20px;
+    
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     
+}
+ 
+img {
+    display: block;
 }
 
 
 /*footer*/
 
 .footer-page {
-    width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     height: 252px;
     background-color: #2F303A;
 }
@@ -427,13 +448,14 @@ margin-right: 50px;
 
 
    .btm {
-    padding-top: 60px;
-    padding-bottom: 60px;
+   
    } 
     
-     /*FOOTER*/
+    
 
 .logo-footer {
+    display: block;
+    margin-bottom: 20px;
     font-family:'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -448,7 +470,7 @@ margin-right: 50px;
 }
 
 .contact-link  {
-    padding-top: 20px;
+    
     
 }
 
