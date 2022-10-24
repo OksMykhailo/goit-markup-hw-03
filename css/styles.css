@@ -44,7 +44,7 @@ body {
     
 }
 
-.hero-title,.list-caption,.heading,.list-text,.items-text,.subject {
+h1,h2,h3,p {
     margin-top: 0;
 }
 
@@ -73,7 +73,7 @@ ul {
        /*HEADER*/
 
 .page-header {
-    width: 1600px;
+    
     border-bottom: 1px solid #EEEEEE;
 }
 
@@ -232,6 +232,7 @@ margin-right: 50px;
 
 .list {
     display: flex;
+    gap: 30px;
 }
 
 .list-item {
@@ -239,9 +240,9 @@ margin-right: 50px;
     
 }
 
-.list .list-item + .list-item {
+/*.list .list-item + .list-item {
     margin-left: 30px;
-}
+}*/
 
 .list-caption {
     margin-top: 0;
@@ -302,18 +303,19 @@ margin-right: 50px;
     border-radius: 0px 0px 4px 4px;
 }
 
-.items .img-item + .img-item {
+/*.items .img-item + .img-item {
     margin-left: 30px;
-}
+}*/
 
 
 .items {
     padding-bottom: 94px;
     display: flex;
+    gap: 30px;
 }
 
 .items-caption {
-    margin-top: 30px;
+    
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.14;
@@ -322,10 +324,17 @@ margin-right: 50px;
 
 .items-text {
     
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.71;
     color: var(--primary-text-color);
+
+    
+}
+
+.team {
+ padding-top:30px;
+ padding-bottom: 30px;
 }
 
 /*PORTFOLIO*/
@@ -367,6 +376,7 @@ margin-right: 50px;
 .item {
     display: flex;
     flex-wrap: wrap;
+    gap:30px;
     margin-top: 34px;
     padding-bottom: 94px;
 }
@@ -380,9 +390,8 @@ margin-right: 50px;
 }*/
 
 .item-list {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    /*width: calc((100% - 60px) / 3);*/
+    flex-grow: 1;
     
     
 }
@@ -401,9 +410,7 @@ margin-right: 50px;
 }
 
 .subject {
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+    
     margin-bottom: 0;
     
     font-size: 18px;
@@ -413,10 +420,9 @@ margin-right: 50px;
 }
 
 .desc {
-    padding-left: 24px;
-    padding-right: 24px;
+   
     margin-top: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     
     font-size: 16px;
     line-height: 1.87;
@@ -424,7 +430,10 @@ margin-right: 50px;
 }
 
 .border {
-    
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
